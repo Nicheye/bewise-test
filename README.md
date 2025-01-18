@@ -1,7 +1,9 @@
-Запуск - docker compose up --build
+Запуск - docker compose up --build 
+
 docs - http://localhost:8000/docs#/, но напишу и руками)
 
 Создание - POST http://localhost:8000/applications
+```
 Request:
 {
   "user_name": "misha",
@@ -14,7 +16,9 @@ Response:
     "id": 18,
     "created_at": "2025-01-18T13:52:45.532809"
 }
+```
 Получение - GET http://localhost:8000/applications
+```
 [
     {
         "user_name": "JohnDoe",
@@ -26,3 +30,4 @@ Response:
     .....
 ]
 Фильтры по name, page, size передаются через query параметры (?name=some&...)
+```
